@@ -7,7 +7,7 @@
      <div className='space-y-10'>
 
       <Home/>
-     <CartOverview/>
+     
      </div>
    )
  }

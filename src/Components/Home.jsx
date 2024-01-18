@@ -16,7 +16,7 @@ const Header = () => {
 
 function Home() {
   return (
-    <div className="grid h-[500px] grid-rows-3 bg-red-500">
+    <div className="grid h-screen grid-rows-[auto_1fr_auto]">
       <Header />
       <h1 className="text-center text-xl font-semibold py-8">
         The best pizza.
@@ -25,7 +25,10 @@ function Home() {
         <p className=" text-yellow-500">
           Straight out of the oven, straight to you.
         </p>
+      <p className=" py-8">Welcome start by your Name </p>
+      <input type="text" placeholder="your name" className=" " />
       </h1>
+      
       <CartOverview/>
     </div>
   );
