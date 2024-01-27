@@ -26,4 +26,6 @@ npm i eslint vite-plugin-eslint eslint-config-react-app --save-dev
 ```
 ### Learning Steps 
 1.Basic structure setup 
+2.File struture 
+3.code landing page
  

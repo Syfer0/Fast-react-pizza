@@ -1,12 +1,35 @@
  import React from 'react'
- import Home from './Components/Home'
- import CartOverview from './Components/CartOverview'
- 
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import Home from './ui/Home'
+import Menu from './features/menu/Menu'
+import Cart from './features/Cart/Cart'
+import Order from './features/order/Order'
+import CreateOrder from './features/order/CreateOrder'
+const router = createBrowserRouter([
+ { path:'/',
+  element:<Home/>},
+  {
+    path: '/menu',
+    element:<Menu/>
+  },
+  {
+ path:'/cart',
+ element:<Cart/>
+  },
+  {
+    path:'/order/:orderId',
+    element:<Order/>
+  },{
+    path:'/order/new',
+    element:<CreateOrder/>
+  },
+   
+])
  function App() {
    return (
      <div className='space-y-10'>
-
-      <Home/>
+<RouterProvider router={router}/>
+      
      
      </div>
    )
