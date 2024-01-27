@@ -18,3 +18,12 @@ Ensure the following tools are installed on your machine:
 
    ```bash
    git clone https://github.com/your-username/your-project.git
+ 
+
+### setting up CMD
+```
+npm i eslint vite-plugin-eslint eslint-config-react-app --save-dev  
+```
+### Learning Steps 
+1.Basic structure setup 
+ 
