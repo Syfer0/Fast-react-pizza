@@ -1,23 +1,22 @@
 import { Link } from "react-router-dom";
  
 import React from "react";
- import CartOverview from "../features/Cart/CartOverview";
+// import Header from "./Header";
 
-const Header = () => {
-  return (
-    <header className=" flex item-center container mx-auto bg-yellow-500 px-4 py-3 justify-between"  >
-            Fast React Pizza co.
-          <br />
-          <input type="text" alt="search order #" className="rounded m-3"  />
+// const Header = () => {
+//   return (
+//     <header className=" flex item-center container mx-auto bg-yellow-500 px-4 py-3 justify-between"  >
+//             Fast React Pizza co.
+//           <br />
+//           <input type="text" alt="search order #" className="rounded m-3"  />
        
-    </header>
-  );
-};
+//     </header>
+//   );
+// };
 
 function Home() {
   return (
     <div className="grid h-screen grid-rows-[auto_1fr_auto]">
-      <Header />
       <h1 className="text-center text-xl font-semibold py-8">
         The best pizza.
         <br />
@@ -28,8 +27,6 @@ function Home() {
       <p className=" py-8">Welcome start by your Name </p>
       <input type="text" placeholder="your name" className=" " />
       </h1>
-      
-      <CartOverview/>
     </div>
   );
 }
