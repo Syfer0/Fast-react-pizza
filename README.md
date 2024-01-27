@@ -26,6 +26,7 @@ npm i eslint vite-plugin-eslint eslint-config-react-app --save-dev
 ```
 ### Github commit prop
 Add [filename].jsx: Initial version of the header component
+Update README with additional info
 
 
 ### Learning Steps 
