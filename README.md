@@ -24,6 +24,10 @@ Ensure the following tools are installed on your machine:
 ```
 npm i eslint vite-plugin-eslint eslint-config-react-app --save-dev  
 ```
+### Github commit prop
+Add [filename].jsx: Initial version of the header component
+
+
 ### Learning Steps 
 1.Basic structure setup 
 2.File struture 
