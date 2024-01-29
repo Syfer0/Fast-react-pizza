@@ -34,3 +34,10 @@ Update README with additional info
 2.File struture 
 3.code landing page
  
+### Functional Requirement
+1.build layout sturture with advance Routing logic 
+   a.Routing ,using navigation loader and action to run logic
+2.styling with resposive Tailwind css 
+   a.React Reuse componets 
+3.Implementing unit Test 
+   a.using jest 
