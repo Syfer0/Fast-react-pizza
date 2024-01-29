@@ -39,7 +39,7 @@ const router = createBrowserRouter([
 ])
  function App() {
    return (
-     <div className='space-y-10'>
+     <div >
 <RouterProvider router={router}/>
       
      
