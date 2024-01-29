@@ -72,7 +72,7 @@ function CreateOrder() {
 
         <div>
           <input type="hidden" name='cart'  value={JSON.stringify(cart)}/>
-          <button>Order now</button>
+          <button className='bg-yellow-400 uppercase font-semibold text-stone-800 py-3 px-4 inline-block hover:bg-yellow-300  tracking-wide rounded-full transition-colors duration-300 focus:outline-none focus:ring focus:ring-yellow-300 focus:ring-offset-2'>Order now</button>
         </div>
       </Form>
     </div>
@@ -87,9 +87,10 @@ cart:JSON.parse(data.cart),
 priority: data.priority === 'on',
 }
 console.log(order)
-const newOrder = await CreateOrder(order);
-console.log(newOrder)
- return redirect(`/order/${newOrder.id}`)
+// const newOrder = await CreateOrder(order);
+// console.log(newOrder)
+//  return redirect(`/order/${newOrder.id}`)
+return null 
 }
 
 export default CreateOrder;
