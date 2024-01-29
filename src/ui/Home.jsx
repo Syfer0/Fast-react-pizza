@@ -7,10 +7,10 @@ function Home() {
         The best pizza.
         <br />
 
-        <p className=" text-yellow-500">
+        <p className=" text-yellow-500 mb-8">
           Straight out of the oven, straight to you.
         </p>
-      <p className=" py-8">Welcome start by your Name </p>
+      {/* <p className=" py-8">Welcome start by your Name </p> */}
       <CreateUser/>
       </h1>
     </div>
