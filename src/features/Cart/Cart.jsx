@@ -30,15 +30,19 @@ const fakeCart = [
 
 function Cart() {
   const username = useSelector(state => state.user.username)
-  const cart = fakeCart;
+  // const cart = useSelector( state => state.cart.cart);
+  const cart = fakeCart
+  console.log(cart)
 
   return (
     <div className='py-3 px-4 '>
       <LinkButton to="/menu" >&larr; Back to menu</LinkButton>
 
       <h2 className='mt-7 text-xl font-semibold'>Your cart,{username} </h2>
-      <ul className=' divide-y divide-stone-200 border-b mt-3'>
-        {cart.map(item=><CartItem item={item} key={item.key}/>)}
+      <ul className='divide-y divide-stone-200 border-b mt-3'>
+      {cart.map(item => (
+      <CartItem item={item} key={item.pizzaId} />
+      ))}
       </ul>
 
       <div className='mt-6 flex space-x-2'>

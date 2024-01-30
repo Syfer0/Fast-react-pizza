@@ -112,7 +112,7 @@ export async function action({ request }) {
     ...data,
     cart: JSON.parse(data.cart),
     priority: data.priority === 'on',
-  };
+  };    
 
   const errors = {};
   if (!isValidPhone(order.phone))
