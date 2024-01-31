@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { getTotalCartPrice, getTotalCartQuantity } from "./cardSlice";
+import { getTotalCartPrice, getTotalCartQuantity } from "./cartSlice";
 import { formatCurrency } from "../../utils/helpers";
 
 function CartOverview() {
