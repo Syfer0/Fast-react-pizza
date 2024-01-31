@@ -30,8 +30,8 @@ const fakeCart = [
 
 function Cart() {
   const username = useSelector(state => state.user.username)
-  // const cart = useSelector( state => state.cart.cart);
-  const cart = fakeCart
+  const cart = useSelector( state => state.cart.cart);
+  // const cart = fakeCart
   console.log(cart)
 
   return (
