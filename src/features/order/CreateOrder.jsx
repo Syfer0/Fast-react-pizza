@@ -7,6 +7,7 @@ import { clearCart, getCart, getTotalCartPrice } from '../Cart/cartSlice';
 import EmptyCart from '../Cart/EmptyCart';
 import store from '../../stored';
 import { formatCurrency } from '../../utils/helpers';
+import { fetchAddress } from '../user/userSlice';
 
 // https://uibakery.io/regex-library/phone-number
 const isValidPhone = (str) =>
@@ -33,6 +34,7 @@ function CreateOrder() {
   return (
     <div className="px-4 py-6">
       <h2 className="mb-8 text-xl font-semibold">Ready to order? Let's go!</h2>
+      {/* <button onClick={() => dispatch(fetchAddress())}>Get Position</button> */}
 
       {/* <Form method="POST" action="/order/new"> */}
       <Form method="POST">
