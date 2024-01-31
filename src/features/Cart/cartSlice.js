@@ -4,10 +4,10 @@ const initialState = {
   cart: [],
 
   // cart: [
-  //   {
-  //     pizzaId: 12,
+  // {
+  //   pizzaId: 12,
   //     name: 'Mediterranean',
-  //     quantity: 2,
+  //     quantity: 5,
   //     unitPrice: 16,
   //     totalPrice: 32,
   //   },

@@ -8,9 +8,10 @@ import { clearCart, getCart } from './cartSlice';
 function Cart() {
   const username = useSelector((state) => state.user.username);
   const cart = useSelector(getCart);
+  console.log(cart)
   const dispatch = useDispatch();
 
-  if (!cart.length) return <EmptyCart />;
+  // if (!cart.length) return <EmptyCart />;
 
   return (
     <div className="px-4 py-3">
